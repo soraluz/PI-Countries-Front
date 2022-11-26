@@ -1,11 +1,12 @@
 
 import axios from 'axios'
+const servidor='https://pi-countries-back-production-cbec.up.railway.app'
 
 export function getCountries(){
     
     return function(dispatch){
         dispatch(setStatus('...Cargando'))
-        axios.get('http://localhost:3001/countries')
+        axios.get(`${servidor}/countries`)
         .then(r=>r.data)
         .then(data=>dispatch({
             type:'GET_COUNTRIES',
@@ -20,7 +21,7 @@ export function getDetailCountry(id){
    
     return function(dispatch){
         dispatch(setStatus('...Cargando'))
-        axios.get(`http://localhost:3001/countries/${id}`)
+        axios.get(`${servidor}/countries/${id}`)
         .then(r=>r.data)
         .then(data=>dispatch({
             type:'GET_DETAIL_COUNTRY',
@@ -33,7 +34,7 @@ export function getDetailCountry(id){
 
 export function getActivities(){
     return function(dispatch){
-        axios.get('http://localhost:3001/activities')
+        axios.get(`${servidor}/activities`)
         .then(r=>r.data)
         .then(data=>dispatch({
             type:'GET_ACTIVITIES',
@@ -47,7 +48,7 @@ export function getActivities(){
 export function getSearch(name){
     return function(dispatch){
         dispatch(setStatus('...Cargando'))
-        axios.get(`http://localhost:3001/countries?name=${name}`)
+        axios.get(`${servidor}/countries?name=${name}`)
         .then(r=>r.data)
         .then(data=>dispatch({
             type:'GET_SEARCH',
@@ -72,7 +73,7 @@ export function getFilterActivity(activity){
     return function(dispatch){
         dispatch(setStatus('...Cargando'))
         if(activity!=='All'){
-            axios.get(`http://localhost:3001/countries?activity=${activity}`)
+            axios.get(`${servidor}/countries?activity=${activity}`)
         .then(r=>r.data)
         .then(data=>dispatch({
             type:'GET_FILTER_ACTIVITY',
@@ -92,7 +93,7 @@ export function getFilterActivity(activity){
 
 export function createActivity(activity){
     return function(dispatch){
-        axios.post('http://localhost:3001/activities',activity)
+        axios.post(`${servidor}/activities`,activity)
         .then(r=>r.data)
         .then(r=>dispatch(setStatus('Datos creados correctamente')))
         .catch(e=>dispatch(setStatus('Error en alguno de los datos')))
