@@ -1,0 +1,44 @@
+.countries{
+    display:flex;
+    flex-direction:column;
+    margin: 20px
+}
+.paginado{
+    flex: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.paginado label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.paginado button{
+    color:black;
+    background-color:white ;
+    font-weight: bold;
+    border:2px solid black;
+    border-radius: 25px;
+    font-size: 20px;
+    width: 3rem;
+}
+
+.paginado button:hover{
+    background-color: #21649b;
+}
+
+.paginado button:focus{
+    color:white;
+    background-color: black;
+    font-size: 1.5rem;
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+

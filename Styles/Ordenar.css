@@ -1,0 +1,25 @@
+.ordenar{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap
+}
+.ordenar p{
+    font-size: 20px;
+    color:brown;
+}
+.ordenar select{
+    color:#212529;
+    background-color:#fff;
+    padding:.375rem 2.25rem .375rem .75rem;
+    font-size: 1rem;
+    margin: 15px ;
+    border:1px solid #ced4da;
+    border-radius:.375rem;
+}
+.ordenar select:focus{
+    border-color:#86b7fe;
+    outline:0;
+    box-shadow:0 0 0 .25rem rgba(13,110,253,.25)
+}

@@ -1,0 +1,33 @@
+.filtrado{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filtrado label{
+    
+    font-size: 20px;
+    color:brown;
+    margin: 10px;
+}
+.filtrado select{
+    color:#212529;
+    background-color:#fff;
+    padding:.375rem 2.25rem .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.2em;
+    margin: 15px ;
+    border:1px solid #ced4da;
+    border-radius:.375rem;
+}
+.filtrado select:focus{
+    border-color:#86b7fe;
+    outline:0;
+    box-shadow:0 0 0 .25rem rgba(13,110,253,.25)
+}
+.filtros{
+    display: flex;
+     flex-direction: column;
+ }

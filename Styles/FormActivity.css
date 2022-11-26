@@ -1,0 +1,95 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.form fieldset{
+    background-color: azure;
+    color:#291900;
+    font-size: 20px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 15px;
+}
+.form label{
+    color:gray;
+    display: inline;
+    font-size: 20px;
+}
+.form p{
+    display: inline;
+    color:red;
+    font-weight: bold;
+}
+.input{
+    border:1px solid #ced4da;
+    margin: 15px;
+    padding:.375rem .75rem;
+    font-size:20px;
+    line-height:1.5;
+    color:#212529;
+    background-color:#fff;
+    border:1px solid #ced4da;
+    border-radius:.375rem;
+    width: 300px;
+    height:30PX;
+}
+.input:focus{
+    border-color:#86b7fe;
+    outline:0;
+    box-shadow:0 0 0 .25rem rgba(13,110,253,.25);
+}
+.form select{
+    color:#212529;
+    background-color:#fff;
+    padding:.375rem 2.25rem .375rem .75rem;
+    font-size: 1rem;
+    margin: 15px ;
+    border:1px solid #ced4da;
+    border-radius:.375rem;
+}
+.form select:focus{
+    border-color:#86b7fe;
+    outline:0;
+    box-shadow:0 0 0 .25rem rgba(13,110,253,.25)
+}
+.danger{
+    border: 5px solid red;
+    width: 300px;
+    height:30PX;
+}
+
+.boton_form {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: #318aac;
+    border: 2px solid;
+    border-color: #318aac;
+    position: relative;
+    margin: 10px;
+    width: 300px;
+    height: 50px;
+  }
+.boton_form:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+  }
+  .boton_disabled{
+    background-color:#ced4da;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    border: 2px solid;
+    position: relative;
+    margin: 10px;
+    width: 300px;
+    height: 50px;
+  }

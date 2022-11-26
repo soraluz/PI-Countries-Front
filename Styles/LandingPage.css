@@ -1,0 +1,26 @@
+.inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    border: 5px solid green;
+    border-radius: 15px;
+    margin: 100px;
+}
+.inicio button{
+
+    position: absolute;
+    font-size: 20px;
+    top:300px;
+    width: 100px;
+    height: 80px;
+    color:green;
+    border-radius: 10px;
+    background-color:bisque;
+}
+.inicio button:hover{
+    color:blue;
+    cursor: pointer;  
+    font-size: 25px;
+}

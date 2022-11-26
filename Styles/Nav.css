@@ -1,0 +1,38 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 5px solid #291900;
+    border-radius: 20px;
+    padding: 10px;
+    }
+    
+    .nav a{
+        font-size: 20px;
+        text-decoration: none;
+        color:teal; 
+    }
+    .nav a:hover{
+        color: blue;
+        font-size: 25px;
+    }
+
+    .nav button {
+        color: rgba(255, 255, 255, 0.9) !important;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 0.5em 1.2em;
+        background: #318aac;
+        border: 2px solid;
+        border-color: #318aac;
+        position: relative;
+        margin: 10px;
+      }
+    .nav button:hover {
+        color: rgba(255, 255, 255, 1) !important;
+        box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+        transition: all 0.2s ease;
+      }
+      
